@@ -1,0 +1,9 @@
+version: "2"
+services: 
+    ros2_container:
+        container_name: ros2_pid_container
+        build: ros2_pid_container/docker 
+        environment:
+            - ENV=Development
+        volumes:
+            - .:/ros2_pid_container
