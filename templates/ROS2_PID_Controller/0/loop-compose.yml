@@ -1,18 +1,17 @@
 .catalog:
-    name: PID_Controller
-    version: 0.1
-    uuid: pid_controller
-    questions:
-    - variable: WORKDIR
-        description: 'Python project working directory'
-        label: 'Python Workdir:'
-        required: true
-        default: "~/"
-        type: string
-    - variable: RESTART
-        description: 'Application restart option: no, always, on-failure'
-        label: 'Restart:'
-        required: true
-        default: "always"
-        type: string
-      
+  name: PID_Controller
+  version: 0.1
+  uuid: pid_controller
+  questions:
+  - variable: WORKDIR
+    description: 'Python project working directory'
+    label: 'Python Workdir:'
+    required: true
+    default: "~/"
+    type: string
+  - variable: RESTART
+    description: 'Application restart option: no, always, on-failure'
+    label: 'Restart:'
+    required: true
+    default: "always"
+    type: string
