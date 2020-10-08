@@ -1,0 +1,20 @@
+.catalog:
+  name: ROS Controller
+  version: latest
+  uuid: ros_controller
+  questions:
+  - variable: REPO_HOST
+    description: 'Path to your repository'
+    label: 'ROS container repository path:'
+    required: true
+    type: string
+  - variable: REPO_USER
+    description: 'Username for accessing repository'
+    label: 'Username:'
+    required: true
+    type: string
+  - variable: REPO_PASS
+    description: 'Repository secret key'
+    label: 'Pass:'
+    required: true
+    type: string
