@@ -1,11 +1,6 @@
-version: "2"
-services: 
-    ros2_container:
-        container_name: ros_controller
-        build: ros_controller/docker 
-        environment:
-            - ENV=Development
-            - REPO_USER=${REPO_USER}
-            - REPO_PASS=${REPO_PASS}
-        volumes:
-            - .:/ros_controller
+ROSController:
+  image: yuriyfedyuk/ros_controller:latest
+  volumes:
+    - .:/ros_controller
+  command: sh -c 'ros2 launch litmus_ros_bridge nats_bridge.launch.py input_topics:="['ros_input_topic']"'
+  restart: "always"
